@@ -1,6 +1,6 @@
 # config-examples
 
-Example configuration files for FortranCallGraph and FortranTestGenerator 
+Example configuration files for [FortranCallGraph](https://github.com/fortesg/fortrancallgraph) and [FortranTestGenerator](https://github.com/fortesg/fortrantestgenerator) 
 
 ### [plain](plain)
 Plain samples from https://github.com/fortesg/fortrancallgraph and https://github.com/fortesg/fortrantestgenerator
