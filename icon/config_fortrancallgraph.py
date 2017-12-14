@@ -91,8 +91,10 @@ EXCLUDE_MODULES = [ 'iso_fortran_env', 'iso_c_binding', 'ifcore', 'mpi', 'omp_li
                     'mo_art_washout_volc', 'mo_art_washout_radioact', 'mo_art_washout_aerosol', 
                     'mo_art_radiation_aero', 'mo_art_prepare_aerosol', 'mo_art_2mom_driver', 
                     'mo_art_diagnostics', 'mo_art_aero_optical_props', 'mo_art_surface_value', 
-                    'mo_art_diag_types', 'mo_art_unit_conversion'  #ICON-ART 
+                    'mo_art_diag_types', 'mo_art_unit_conversion',  #ICON-ART
+                    
+                    'mo_exception', 'mo_mpi' 
                   ]
 
-IGNORE_GLOBALS_FROM_MODULES = EXCLUDE_MODULES + ['mo_mpi'] 
+IGNORE_GLOBALS_FROM_MODULES = EXCLUDE_MODULES 
 IGNORE_DERIVED_TYPES = []
