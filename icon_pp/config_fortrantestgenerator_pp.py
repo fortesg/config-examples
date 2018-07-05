@@ -5,7 +5,7 @@ FTG_DIR = os.path.dirname(os.path.realpath(__file__))
 FCG_DIR = FTG_DIR + '/../fortrancallgraph'
 FCG_CONFIG_FILE = 'config_fortrancallgraph_pp.py'
 
-TEMPLATE_DIR = FTG_DIR + '/templates/icon_standalone'
+TEMPLATE = FTG_DIR + '/templates/IconStandalone/IconStandalone.tmpl'
 
 ICON_DIR = '/home/christian/workspace/icon'
 
