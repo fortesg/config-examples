@@ -12,6 +12,7 @@ ASSEMBLER_DIRS = [ICON_DIR + '/build/x86_64-unknown-linux-gnu/src',
                   ICON_DIR + '/build/x86_64-unknown-linux-gnu/externals/self/src',
                   ICON_DIR + '/build/x86_64-unknown-linux-gnu/externals/tixi/src',
                   ICON_DIR + '/build/x86_64-unknown-linux-gnu/externals/yac/src', 
+                  ICON_DIR + '/build/x86_64-unknown-linux-gnu/externals/yaxt/src', 
                   ICON_DIR + '/build/x86_64-unknown-linux-gnu/support'] 
 SOURCE_DIRS = ASSEMBLER_DIRS
 
@@ -153,7 +154,13 @@ SPECIAL_MODULE_FILES = {'mo_mcrph_sb': 'mo_2mom_mcrph_driver.f90',
                         'mo_turb_init': 'mo_turb_init_dsl4jsb.f90', 
                         'mo_turb_interface': 'mo_turb_interface_dsl4jsb.f90', 
                         'mo_turb_memory_class': 'mo_turb_memory_class_dsl4jsb.f90', 
-                        'mo_util': 'mo_util_dsl4jsb.f90', }
+                        'mo_util': 'mo_util_dsl4jsb.f90',
+                        'xt_core': 'xt_core_f.f90', 'xt_idxlist_collection': 'xt_idxlist_collection_f.f90',
+                        'xt_idxlist_abstract': 'xt_idxlist_f.f90', 'xt_idxsection': 'xt_idxsection_f.f90',
+                        'xt_mpi': 'xt_mpi_f.f90', 'xt_idxvec': 'xt_idxvec_f.f90',
+                        'xt_idxstripes': 'xt_idxstripes_f.f90', 'xt_redist_base': 'xt_redist_f.f90',
+                        'xt_requests': 'xt_request_f.f90', 'xt_sort': 'xt_sort_f.f90',
+                        'xt_xmap_abstract': 'xt_xmap_f.f90', 'xt_xmap_intersection': 'xt_xmap_intersection_f.f90' }
 EXCLUDE_MODULES = [ 'iso_fortran_env', 'iso_c_binding', 'ifcore', 'mpi', 'omp_lib', #Standard libraries
                     'messy_main_channel_bi', 'messy_main_tracer_bi', 'messy_main_timer_bi', #MESSY
                     'mo_remap_config', 'mo_utilities', #?
