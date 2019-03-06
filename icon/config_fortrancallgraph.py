@@ -207,5 +207,5 @@ EXCLUDE_MODULES = [ 'iso_fortran_env', 'iso_c_binding', 'ifcore', 'mpi', 'omp_li
 IGNORE_GLOBALS_FROM_MODULES = EXCLUDE_MODULES 
 IGNORE_DERIVED_TYPES = []
 
-ABSTRACT_TYPE_IMPLEMENTATIONS = {'t_comm_pattern':'t_comm_pattern_orig',
-                                 't_comm_pattern_collection':'t_comm_pattern_collection_orig'}
+ABSTRACT_TYPE_IMPLEMENTATIONS = {'t_comm_pattern':('mo_communication_orig','t_comm_pattern_orig'),
+                                 't_comm_pattern_collection':('mo_communication_orig','t_comm_pattern_collection_orig')}
