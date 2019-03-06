@@ -1,7 +1,12 @@
 import os
+from config.config_fortrancallgraph import ABSTRACT_TYPE_IMPLEMENTATIONS
 
 # Config file for FortranCallGraph
 # Can be placed in FortranCallGraph's root directory or in a subdirectory called config or at any place and picked with -cf
+
+# Directory where serialized call trees are stored for quicker analysis
+# OPTIONAL: If omitted call trees won't be cached
+CACHE_DIR = os.path.dirname(os.path.realpath(__file__)) + '/cache'
 
 # Locations of the assembler files 
 # Directories are searched in the order of this list
@@ -19,7 +24,7 @@ SOURCE_DIRS = []
 SOURCE_FILES_PREPROCESSED = False 
 
 # dict of all modules that are not defined in a filename with correspondig name (module_name.f90)
-# Format 'module_name': 'actual_file_name'
+# Format 'module_name':'actual_file_name'
 # OPTIONAL
 SPECIAL_MODULE_FILES = {}
 
@@ -35,6 +40,10 @@ IGNORE_GLOBALS_FROM_MODULES = EXCLUDE_MODULES + []
 # OPTIONAL
 IGNORE_DERIVED_TYPES = []
 
-# Directory where serialized call trees are stored for quicker analysis
-# OPTIONAL: If omitted call trees won't be cached
-CACHE_DIR = os.path.dirname(os.path.realpath(__file__)) + '/cache'
+# dict of subtypes that are chosen as the one and only implementation of an abstract type. 
+# FCG handles variables of a given abstract type as if the type were the given subtype.
+# Format: 'abstract_type':('subtype_module','subtype')
+# If the module with analyzed subroutine has a dependency to subtype_module anyway, you can leave it away:
+# 'abstract_type':'subtype'
+# OPTIONAL
+ABSTRACT_TYPE_IMPLEMENTATIONS = {}

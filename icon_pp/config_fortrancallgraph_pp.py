@@ -1,7 +1,5 @@
 import os
 
-### EDIT HERE ###
-
 FCG_DIR = os.path.dirname(os.path.realpath(__file__))
 CACHE_DIR = FCG_DIR + '/cache/icon'
 
@@ -189,9 +187,20 @@ EXCLUDE_MODULES = [ 'iso_fortran_env', 'iso_c_binding', 'ifcore', 'mpi', 'omp_li
                     'mo_art_radiation_aero', 'mo_art_prepare_aerosol', 'mo_art_2mom_driver', 
                     'mo_art_diagnostics', 'mo_art_aero_optical_props', 'mo_art_surface_value', 
                     'mo_art_diag_types', 'mo_art_unit_conversion',  #ICON-ART
-                    
+                    'mo_jsb4_forcing', 'mo_jsb_base', 'mo_jsb_class', 'mo_jsb_config_class', 'mo_jsb_control', 
+                    'mo_jsb_domain_iface', 'mo_jsb_grid_class', 'mo_jsb_grid', 'mo_jsb_interface', 
+                    'mo_jsb_io', 'mo_jsb_io_iface', 'mo_jsb_io_netcdf', 'mo_jsb_io_netcdf_iface', 'mo_jsb_lct_class', 
+                    'mo_jsb_lctlib_class', 'mo_jsb_memory_class', 'mo_jsb_model_class', 'mo_jsb_model_init', 
+                    'mo_jsb_model_usecases', 'mo_jsb_namelist_iface', 'mo_jsb_nml_iface', 'mo_jsb_parallel',
+                    'mo_jsb_parallel_iface', 'mo_jsb_physical_constants', 'mo_jsb_process_class', 
+                    'mo_jsb_process_factory', 'mo_jsb_task_class', 'mo_jsb_test', 'mo_jsb_tile_class', 'mo_jsb_tile',
+                    'mo_jsb_time', 'mo_jsb_time_iface', 'mo_jsb_utils_iface', 'mo_jsb_var_class', 'mo_jsb_varlist',
+                    'mo_jsb_varlist_iface', 'mo_jsb_version', #JSBACH 
                     'mo_exception', 'mo_mpi' 
                   ]
 
 IGNORE_GLOBALS_FROM_MODULES = EXCLUDE_MODULES 
 IGNORE_DERIVED_TYPES = []
+
+ABSTRACT_TYPE_IMPLEMENTATIONS = {'t_comm_pattern':('mo_communication_orig','t_comm_pattern_orig'),
+                                 't_comm_pattern_collection':('mo_communication_orig','t_comm_pattern_collection_orig')}
