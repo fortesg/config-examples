@@ -16,7 +16,6 @@ SOURCE_DIRS = [ICON_DIR + '/src',
                ICON_DIR + '/externals/self/src',
                ICON_DIR + '/externals/yac/src',
                ICON_DIR + '/externals/tixi/src',
-               ICON_DIR + '/externals/jsbach/src',
                ICON_DIR + '/support',
                ICON_DIR + '/build/x86_64-unknown-linux-gnu/src'] #Letzter Eintrag fuer JSBACH-Generate 
 
