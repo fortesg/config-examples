@@ -127,6 +127,7 @@ SPECIAL_MODULE_FILES = {'mo_mcrph_sb': 'mo_2mom_mcrph_driver.f90',
                         'mo_jsb_varlist_iface': 'mo_jsb_varlist_iface_dsl4jsb.f90', 
                         'mo_jsb_version': 'mo_jsb_version_dsl4jsb.f90', 
                         'mo_jsb_vertical_axes': 'mo_jsb_vertical_axes_dsl4jsb.f90',
+                        'mo_jsb_vertical_axes_iface': 'mo_jsb_vertical_axes_iface_dsl4jsb.f90',
                         'mo_land2atm_memory_class': 'mo_land2atm_memory_class_dsl4jsb.f90', 
                         'mo_pheno_config_class': 'mo_pheno_config_class_dsl4jsb.f90', 
                         'mo_pheno_constants': 'mo_pheno_constants_dsl4jsb.f90', 
@@ -213,7 +214,7 @@ EXCLUDE_MODULES = [ 'iso_fortran_env', 'iso_c_binding', 'ifcore', 'mpi', 'omp_li
                     'mo_jsb_parallel_iface', 'mo_jsb_physical_constants', 'mo_jsb_process_class', 
                     'mo_jsb_process_factory', 'mo_jsb_task_class', 'mo_jsb_test', 'mo_jsb_tile_class', 'mo_jsb_tile',
                     'mo_jsb_time', 'mo_jsb_time_iface', 'mo_jsb_utils_iface', 'mo_jsb_var_class', 'mo_jsb_varlist',
-                    'mo_jsb_varlist_iface', 'mo_jsb_version', 'mo_jsb_vertical_axes' #JSBACH 
+                    'mo_jsb_varlist_iface', 'mo_jsb_version', 'mo_jsb_vertical_axes', 'mo_jsb_vertical_axes_iface' #JSBACH 
                     'mo_exception', 'mo_mpi' 
                   ]
 
