@@ -218,8 +218,9 @@ EXCLUDE_MODULES = [ 'iso_fortran_env', 'iso_c_binding', 'ifcore', 'mpi', 'omp_li
                     'mo_exception', 'mo_mpi' 
                   ]
 
-IGNORE_GLOBALS_FROM_MODULES = EXCLUDE_MODULES 
+IGNORE_GLOBALS_FROM_MODULES = EXCLUDE_MODULES + ['mtime']
 IGNORE_DERIVED_TYPES = []
+ALWAYS_FULL_TYPES = ['datetime', 'timedelta']
 
 ABSTRACT_TYPE_IMPLEMENTATIONS = {'t_comm_pattern':('mo_communication_orig','t_comm_pattern_orig'),
                                  't_comm_pattern_collection':('mo_communication_orig','t_comm_pattern_collection_orig')}
