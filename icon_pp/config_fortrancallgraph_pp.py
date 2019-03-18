@@ -210,7 +210,7 @@ EXCLUDE_MODULES = [ 'iso_fortran_env', 'iso_c_binding', 'ifcore', 'mpi', 'omp_li
                     'mo_jsb_parallel_iface', 'mo_jsb_physical_constants', 'mo_jsb_process_class', 
                     'mo_jsb_process_factory', 'mo_jsb_task_class', 'mo_jsb_test', 'mo_jsb_tile_class', 'mo_jsb_tile',
                     'mo_jsb_time', 'mo_jsb_time_iface', 'mo_jsb_utils_iface', 'mo_jsb_var_class', 'mo_jsb_varlist',
-                    'mo_jsb_varlist_iface', 'mo_jsb_version', 'mo_jsb_vertical_axes', 'mo_jsb_vertical_axes_iface' #JSBACH 
+                    'mo_jsb_varlist_iface', 'mo_jsb_version', 'mo_jsb_vertical_axes', 'mo_jsb_vertical_axes_iface', #JSBACH 
                     'mo_exception', 'mo_mpi' 
                   ]
 
