@@ -194,7 +194,7 @@ EXCLUDE_MODULES = [ 'iso_fortran_env', 'iso_c_binding', 'ifcore', 'mpi', 'omp_li
                     'mo_art_washout_volc', 'mo_art_washout_radioact', 'mo_art_washout_aerosol', 
                     'mo_art_radiation_aero', 'mo_art_prepare_aerosol', 'mo_art_2mom_driver', 
                     'mo_art_diagnostics', 'mo_art_aero_optical_props', 'mo_art_surface_value', 
-                    'mo_art_diag_types', 'mo_art_unit_conversion',  #ICON-ART
+                    'mo_art_diag_types', 'mo_art_unit_conversion', 'mo_art_prescribed_state', #ICON-ART
                     'mo_assimi_config_class', 'mo_assimi_constants', 'mo_assimi_interface', 'mo_assimi_memory_class', 
                     'mo_assimi_process', 'mo_a2l_memory_class', 'mo_atmland_interface', 
                     'mo_carbon_config_class', 'mo_carbon_constants', 'mo_carbon_init', 'mo_carbon_interface', 
